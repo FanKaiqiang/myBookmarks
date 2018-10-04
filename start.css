@@ -1,36 +1,63 @@
-*{
-    margin:0;
-    padding:0;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-a{
-    text-decoration:none;
+
+main {
+  text-align: center;
+  height: 100vh;
+  background: #dddddd url(wallhaven.png) no-repeat center center;
+  background-size: cover;
 }
-kbd{
-    border:1px solid red;
-    width: 4em;
-    height:4em;
-    display:inline-block;
-    text-transform:uppercase;
-    position:relative;
+
+a {
+  text-decoration: none;
 }
-kbd > button{
-    position: absolute;
-    right:0;
-    bottom:0;
-    display: none;
+
+button {
+  border: none;
+  margin: 6px;
+  color: white;
+  background: black;
+  border-radius: 8px;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  outline: none;
+  box-shadow: 0 0 0 1px #1A1B1C, 0 0 0 2px #1F2020, 0 3px 0 2px #080808;
+  font-size: 21px;
 }
-kbd:hover > button{
-    display: inline-block;
+button:hover {
+  top: 2px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-main{
-    text-align: center;
+
+#maincase {
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.4);
+  margin-top: 100px;
+  min-width: 944px;
+  display: inline-block;
 }
-#maincase{
-    display: inline-block;
+
+img {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50px;
+  left: 50px;
 }
-#maincase div:nth-Child(3){
-    margin-left:2em;
-}
-#maincase div:nth-Child(4){
-    margin-left:2em;
+
+footer {
+  color: black;
+  margin: 50px;
+  -webkit-user-select: none;
+  font-size: 30px;
+  font-family: "楷体";
 }
